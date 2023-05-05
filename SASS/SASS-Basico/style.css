@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  top: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(rgba(32, 222, 58, 0.76), rgba(22, 96, 32, 0.76));
+  width: 100vw;
+  height: 100vh;
+}
+
+.caja {
+  display: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  width: 90vw;
+  height: 90vh;
+}
+.contenedor_box {
+  background-color: white;
+  padding: 10px;
+}
+.contenedor_parrafo {
+  background-color: red;
+  color: black;
+  font-family: arial;
+  font-style: normal;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

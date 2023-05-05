@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: (blue);
+    overflow-x: hidden ;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgb(10, 80, 231);
+}
+
+h1{
+    background-color: rgb(16, 167, 66);
+    color: white;
+    background: linear-gradient(green);
+    padding: 30px 20px;
+    border-radius: 50px;
+    border-bottom: 20px;
+    cursor: pointer;
+}
+
+/* stilo caja 1 */
+.caja1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+.caja1:hover{
+    animation-play-state: running;
+    color: red;
+}
+
+/* animacion caja 1 */
+@keyframes animacion1{
+    from{
+        background-color: darkgreen;
+    }
+    to{
+        background-color: red;
+    }
+}
+
+
+.caja2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: animacion2 4s linear infinite;
+
+}
+
+.caja2:hover{
+    color: black;
+    animation-play-state: paused;
+    
+}
+
+/* animacion caja 2 */
+@keyframes animacion2{
+    0%{
+        transform: translate(200px, 0px);
+    }
+    
+    33.3%{
+        transform: translate(-200px, 0px);
+    }
+    66.6%{
+        transform: translate(200px, 0px);
+    }
+    100%{
+        transform: translate(-200px, 0px);
+    }
+}
+
+.caja3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 120, 14);
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+    animation: 
+        animacion1 1s 500ms linear infinite alternate,
+        animacion2 6s 2s  cubic-bezier(.49,.79,.71,.41) infinite alternate,
+        animacion3 5s linear infinite alternate ;
+}
+
+.caja3:hover{
+    animation-play-state: paused;
+    color: aliceblue;
+
+}
+
+/* animacion caja 3 */
+@keyframes animacion3{
+    0%{
+        border-radius: 10% 50% 10% 50%;
+    }
+    25%{
+        border-radius: 10% 50% 10% 50% ;
+    }
+    50%{border-radius: 10% 50% 10% 50%;
+    }
+    74%{
+        border-radius: 10% 50% 10% 50%;
+    }
+    100%{
+        border-radius: 10% 50% 10% 50%;
+    }
+
+
+}

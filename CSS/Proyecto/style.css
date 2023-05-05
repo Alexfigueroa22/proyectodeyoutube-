@@ -1,0 +1,212 @@
+/* selector HTML (body) */
+
+·{
+    font-family:roboto;
+}
+body{
+    display: grid;
+    grid-template-columns: 8% 92%;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+/* aside (menu) */
+
+aside{
+    color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+}
+
+aside .iconosaside{
+    width: 40px;
+    height: 30px;
+    justify-content: flex-start;
+    margin-left: -8px;
+    margin-top: -3px;
+    padding: 2px;
+}
+
+.iconoss{
+    background-color: grey;
+    width: 40px;
+    height: 30px;
+
+
+}
+
+.iconosaside:hover{
+    background-color: gray;
+}
+
+#marginbotton{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* barra de navegacion, recomendaciones y videos */
+/* logotipo youtube */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* impu y lupa y microfono */
+.buscador{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.buscarr{
+    height: 35px;
+    width: 420px;
+    padding-left: 15px;
+    border-radius: 25px 0px 0px 25px;
+    border-color:rgb(39, 39, 39) ;
+    background-color:rgb(39, 39, 39);
+}
+
+.buscarr:focus{
+    outline: none;
+}
+
+div button img{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+
+}
+.lupa{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 60px;
+    border-radius: 0px 25px 25px 0px;
+    margin:-17px;
+    margin-top:-18px;
+    margin-left: -8px;
+    
+    
+}
+.magnifyingglass{
+    height: 40px;
+    width: 60px;
+    border-color: rgb(39, 39, 39);
+    border: none;
+    background-color:rgb(39, 39, 39) ;
+    border-radius: 0px 25px 25px 0px ;
+    margin:-20px;
+    margin-top:-18px;
+    margin-left: -13px;
+}
+
+.microfonoo{
+    display: flex;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    border: none;
+    height: 36px;
+    margin-right: 40px;
+
+}
+.microfono{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 20px;
+    width: 10px;
+    background-color:rgb(15, 15, 15);
+    margin-left: 20px;
+}
+
+#micro{
+    background-color:rgb(39, 39, 39) ;
+}
+
+
+
+
+/* accion de usuario */
+#accionesusurio img{
+    width: 35px;
+    height: 35px;
+}
+
+
+/* barra de recomendacion */
+
+#barraderecomendados{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+.botonderecomendacion{
+    background-color:rgb(39, 39, 39);
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    height: 32px;
+    padding: 10px;
+    border: none;
+    font-size:small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botonderecomendacion:hover{
+    background-color: black;
+}
+
+
+/* cuadricula de video */
+#videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+    gap: 15px;
+    
+}
+
+#videos a img{
+    border-radius: 25px 0px 0px 25px;
+}
+
+.perfildelvideo{
+    display: flex;
+    gap: 8px;
+}
+.perfill{
+    margin-top: 8px;
+    height: 40px;
+}
+
+.titulos{
+    margin-top: -10px;
+}
+
+.titulooo{
+    margin-top: -20px;
+    color: gray;
+}
+.tituloooo{
+    margin-top: -15px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
